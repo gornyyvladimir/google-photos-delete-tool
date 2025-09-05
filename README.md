@@ -108,20 +108,6 @@ Script selects and deletes photos in batches based on what can be seen in the br
 
 The script may not work as expected in case your internet speed is considerably slow. In that case, you may want to increase the `DELETE_DELAY_CYCLE` by few thousands of milliseconds. This is to ensure that the page has refreshed before the tool tries to delete the images again.
 
-# FAQs
-
-1) It checks and unchecks the photos, but doesn't delete them.
-   - Use the [english language version of Google Photos](https://photos.google.com/?hl=en) and run the tool again.
-
-2) It stops after deleting some images.
-   - Increase the `DELETE_DELAY_CYCLE` by thousands of milliseconds as described in the [Debugging section](#Debugging).
-
-3) There was a delay in loading images and the tool exited.
-    - In case this happens, you can simply paste the script again and hit enter. The script will continue doing the operation.
-    If you're using, you wouldn't have to copy and paste again. If you press the up arrow key, it will load the last command that you ran in the console. Hit ENTER key and the script will start again.
-
----
-
 # Manual Delete Tool
 
 The manual delete tool provides a user-friendly interface with two buttons for more control over the deletion process.
@@ -166,3 +152,17 @@ Same as the automatic tool above (steps 1-5: login, disable images, open develop
 ### When to Use Each Tool
 - **Use Automatic Tool** for: Large deletions, hands-off operation, bulk processing
 - **Use Manual Tool** for: Selective deletion, more control, testing, or when automatic tool has issues
+
+# FAQs
+
+1) It checks and unchecks the photos, but doesn't delete them.
+   - Use the [english language version of Google Photos](https://photos.google.com/?hl=en) and run the tool again.
+
+2) It stops after deleting some images.
+   - Increase the `DELETE_DELAY_CYCLE` by thousands of milliseconds as described in the [Debugging section](#Debugging).
+
+3) There was a delay in loading images and the tool exited.
+    - In case this happens, you can simply paste the script again and hit enter. The script will continue doing the operation.
+    If you're using, you wouldn't have to copy and paste again. If you press the up arrow key, it will load the last command that you ran in the console. Hit ENTER key and the script will start again.
+
+---
