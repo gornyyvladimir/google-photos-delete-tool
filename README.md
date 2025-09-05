@@ -2,11 +2,24 @@
 
 **You can support my work by donating to: https://ko-fi.com/mrishab**
 
-# Google Photos Delete All Tool
-If you have ever wanted to delete your thousands of photos from the [Google Photos](https://photos.google.com/) but failed to find an easy way to do so, then this is the tool for you. This script goes through all your photos in Google Photos app on the desktop and deletes them. You can visually see the process while it happens!
+# Google Photos Delete Tools
+If you have ever wanted to delete your thousands of photos from the [Google Photos](https://photos.google.com/) but failed to find an easy way to do so, then these tools are for you. We provide two different approaches:
+
+## 1. Automatic Delete Tool (delete_photos.js)
+This script automatically goes through all your photos in Google Photos app on the desktop and deletes them in batches. You can visually see the process while it happens!
+
+## 2. Manual Delete Tool (manual_delete_photos.js) 
+This tool provides SELECT ALL and DELETE buttons for more control over the deletion process. Perfect for when you want to manually control each step of the deletion.
 
 # Getting Started
-Follow the step-by-step instructions below to run the tool.
+
+## Option 1: Automatic Delete Tool (Recommended for bulk deletion)
+Follow the step-by-step instructions below to run the automatic deletion tool.
+
+### Quick Start for Manual Tool
+If you prefer manual control, skip to the [Manual Delete Tool section](#manual-delete-tool) below.
+
+## Automatic Tool Instructions
 
 ## Prerequisites
 - A fairly recent version of a modern web browser. This script has not been tested with any browser other than Google Chrome `Version 71.0.3578.98`. You can [download the latest version of the Google Chrome browser here](https://www.google.com/chrome/). However, you can still use it with any modern browser, like, [Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/) or [IE Edge](https://www.microsoft.com/en-ca/windows/microsoft-edge).
@@ -106,3 +119,50 @@ The script may not work as expected in case your internet speed is considerably 
 3) There was a delay in loading images and the tool exited.
     - In case this happens, you can simply paste the script again and hit enter. The script will continue doing the operation.
     If you're using, you wouldn't have to copy and paste again. If you press the up arrow key, it will load the last command that you ran in the console. Hit ENTER key and the script will start again.
+
+---
+
+# Manual Delete Tool
+
+The manual delete tool provides a user-friendly interface with two buttons for more control over the deletion process.
+
+![Manual Delete Tool Example](images/manual-example.png)
+
+## Features
+- **SELECT ALL button**: Selects all visible photos on the current page
+- **DELETE button**: Deletes the currently selected photos
+- **Visual feedback**: Buttons show progress and completion status
+- **Full control**: You decide when to select and when to delete
+- **Responsive design**: Buttons scale properly when you zoom out to see more photos
+
+## Usage Instructions
+
+### Prerequisites
+Same as the automatic tool above (steps 1-5: login, disable images, open developer tools, go to console tab).
+
+### Steps
+1) **Setup**: Follow steps 1-5 from the [Automatic Tool Instructions](#automatic-tool-instructions) above.
+
+2) **Load the tool**: Copy all the code from [manual_delete_photos.js](manual_delete_photos.js) and paste it in the console.
+
+3) **Hit ENTER**: The tool will load and you'll see two buttons appear on the page:
+   - Blue "SELECT ALL PHOTOS" button (top left)
+   - Red "DELETE SELECTED" button (below the select button)
+
+![Manual Tool Demo](images/manual-example.gif)
+
+4) **Select photos**: Click "SELECT ALL PHOTOS" to select all visible photos on the current page.
+
+5) **Delete photos**: Click "DELETE SELECTED" to delete the selected photos.
+
+6) **Repeat**: After photos are deleted, the page will refresh. Repeat steps 4-5 until all photos are deleted.
+
+### Tips for Manual Tool
+- **Zoom out** (Ctrl/Cmd + Minus) to see and select more photos per batch
+- **Watch the console** for detailed logging of the process
+- **Wait for completion** - buttons will show status updates during operation
+- **Safe operation** - DELETE button works independently, so you have full control
+
+### When to Use Each Tool
+- **Use Automatic Tool** for: Large deletions, hands-off operation, bulk processing
+- **Use Manual Tool** for: Selective deletion, more control, testing, or when automatic tool has issues
